@@ -2,7 +2,7 @@
 
 ML-model for solving the problem of searching semantically similar text documents.
 
-The model processes a new incoming text question and returns a list of N similar questions from an existing [dataset](#2-download-dataset) of 4,567 medical-related questions.
+The model processes a new incoming text question and returns a list of N similar questions from an existing [dataset](#3-download-dataset) of 4,567 medical-related questions.
 
 ## Model
 
@@ -28,7 +28,7 @@ Metric to use for distance computation: `cosine`
 
 ## Output
 
-`questions` - `List[str]` output similar questions (from [Dataset](#2-download-dataset))
+`questions` - `List[str]` output similar questions (from [Dataset](#3-download-dataset))
 
 ## Metric
 
@@ -47,7 +47,7 @@ git clone https://github.com/DimionX/semantic-text-matching.git
 cd semantic-text-matching
 ```
 
-### 1. Creation of virtual environment
+### 2. Creation of virtual environment
 
 ```bash
 python -m venv .venv
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ```
 
 
-### 2. Download dataset
+### 3. Download dataset
 
 Dataset info - [Medical Questions Pairs](https://huggingface.co/datasets/medical_questions_pairs)
 
@@ -76,7 +76,7 @@ Dataset info - [Medical Questions Pairs](https://huggingface.co/datasets/medical
 python ./src/load_dataset.py
 ```
 
-### 3. Model Training
+### 4. Model Training
 
 #### Load spacy models
 
