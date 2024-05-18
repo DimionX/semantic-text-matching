@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+    working_dir: /var/www
+    ports:
+      - 8501:8501
+    entrypoint:
+      ["streamlit", "run", "src/stream.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    volumes:
+      - "./src:/var/www/src"
+      - "./data:/var/www/data"
+      - "./models:/var/www/models"

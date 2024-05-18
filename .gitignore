@@ -1,0 +1,11 @@
+data/*.csv
+models/*.pkl
+__pycache__
+
+# venv
+venv
+.venv
+
+# IDE
+.vscode
+.idea
